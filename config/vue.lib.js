@@ -18,7 +18,7 @@ module.exports = {
   },
   libOutput: {
     path: path.resolve(__dirname, "../dist/lib"),
-    filename: `${name}.${version}.js`,
+    filename: `index.js`,
     library: `${name}`,
     libraryTarget: "umd",
   },

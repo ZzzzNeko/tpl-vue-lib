@@ -2,7 +2,7 @@
   "name": "pt-vue-lib",
   "version": "1.0.0",
   "description": "A project init template for vue lib",
-  "main": "index.js",
+  "main": "dist/lib/index.js",
   "scripts": {
     "serve": "node ./script/serve serve",
     "build": "node ./script/build build"
