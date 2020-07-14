@@ -4,7 +4,8 @@
   "description": "A project init template for vue lib",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "serve": "node ./script/serve serve",
+    "build": "node ./script/build build"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,9 @@
   },
   "homepage": "https://github.com/ZzzNeko/pt-vue-lib#readme",
   "dependencies": {
+    "commander": "^5.1.0",
+    "execa": "^4.0.3",
+    "listr": "^0.14.3",
     "vue": "^2.6.11"
   },
   "devDependencies": {
