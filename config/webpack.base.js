@@ -1,6 +1,5 @@
 const path = require("path");
 const webpack = require("webpack");
-const HtmlWebpackPlugin = require("html-webpack-plugin");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
 const getResolvePath = (d) => path.resolve(__dirname, d);
@@ -89,10 +88,5 @@ module.exports = {
       activeModules: false,
     }),
     new VueLoaderPlugin(),
-    new HtmlWebpackPlugin({
-      title: "Vue-Lib",
-      filename: "index.html",
-      template: "public/index.html",
-    }),
   ],
 };

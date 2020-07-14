@@ -7,8 +7,8 @@ const prodConfig = {
   mode: "production",
   entry: libConfig.libEntry,
   output: libConfig.libOutput,
-  plugins: [new CleanWebpackPlugin({})],
   externals: libConfig.libExternals,
+  plugins: [new CleanWebpackPlugin({})],
 };
 
 module.exports = merge(baseConfig, prodConfig);
