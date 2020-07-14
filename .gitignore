@@ -3,6 +3,10 @@ node_modules/
 
 # output
 dist
+type
+@type
+types
+@types
 
 # vuepress build output
 .vuepress/dist
@@ -12,6 +16,7 @@ dist
 
 # package lock
 *.lock
+*-lock.json
 
 # Logs
 logs
