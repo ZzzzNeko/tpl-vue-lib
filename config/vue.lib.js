@@ -3,12 +3,12 @@ const { version, name } = require("../package.json");
 
 module.exports = {
   appEntry: {
-    main: path.resolve(__dirname, "../src/dev/index.ts"),
+    main: path.resolve(__dirname, "../src/app/index.ts"),
   },
   appOutput: {
     path: path.resolve(__dirname, "../dist/app"),
     filename: "[name].[hash:6].js",
-    chunkFilename: 'js/[name].[chunkhash:6].js'
+    chunkFilename: "js/[name].[chunkhash:6].js",
   },
   appExternals: {},
 
