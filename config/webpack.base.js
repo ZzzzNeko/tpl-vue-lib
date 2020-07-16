@@ -2,9 +2,6 @@ const path = require("path");
 const webpack = require("webpack");
 const VueLoaderPlugin = require("vue-loader/lib/plugin");
 
-const getResolvePath = (d) => path.resolve(__dirname, d);
-const srcResolvePath = getResolvePath("../src");
-
 module.exports = {
   resolve: {
     alias: {
@@ -26,23 +23,19 @@ module.exports = {
       },
       {
         test: /\.vue$/,
-        include: srcResolvePath,
         loader: "vue-loader",
       },
       // 加载器相关配置
       {
         test: /\.css$/,
-        // include: srcResolvePath,
         use: ["style-loader", "css-loader"],
       },
       {
         test: /\.scss$/,
-        include: srcResolvePath,
         use: ["style-loader", "css-loader", "sass-loader"],
       },
       {
         test: /\.sass$/,
-        include: srcResolvePath,
         use: [
           "style-loader",
           "css-loader",
@@ -59,17 +52,14 @@ module.exports = {
       },
       {
         test: /\.pug$/,
-        include: srcResolvePath,
         use: ["pug-plain-loader"],
       },
       {
         test: /\.(woff|woff2|eot|ttf|otf)$/,
-        include: srcResolvePath,
         use: ["file-loader"],
       },
       {
         test: /\.(png|jpg|gif)/,
-        include: srcResolvePath,
         use: [
           {
             loader: "url-loader",
