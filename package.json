@@ -1,5 +1,5 @@
 {
-  "name": "pt-vue-lib",
+  "name": "tpl-vue-lib",
   "version": "1.0.0",
   "description": "A project init template for vue lib",
   "main": "./dist/lib/index.js",
@@ -16,7 +16,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/ZzzNeko/pt-vue-lib.git"
+    "url": "git+https://github.com/ZzzNeko/tpl-vue-lib.git"
   },
   "keywords": [
     "vue"
@@ -24,9 +24,9 @@
   "author": "ZzzNeko",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/ZzzNeko/pt-vue-lib/issues"
+    "url": "https://github.com/ZzzNeko/tpl-vue-lib/issues"
   },
-  "homepage": "https://github.com/ZzzNeko/pt-vue-lib#readme",
+  "homepage": "https://github.com/ZzzNeko/tpl-vue-lib#readme",
   "dependencies": {
     "commander": "^5.1.0",
     "execa": "^4.0.3",
